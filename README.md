@@ -59,19 +59,23 @@ Optional parameters include:
 
  - Directory to save a checkpoint 
 	Ex :
+
 			python train.py data_dir --save_dir save_directory
 
 - Model Architecture ('densenet121' or 'vgg13')
 	Ex : 
+
 			python train.py data_dir --arch 'densenet121'
 
 - Hyperparameters
 	Ex : 
+
 			python train.py data_dir --learning_rate 0.01 --hidden_units 512 256 
 	 -- epochs 20 (all in one line)
 
 - Usage of GPU for training
 	Ex : 
+
 			python train.py data_dir --gpu
 
 
@@ -79,20 +83,24 @@ To use the trained model to predict flower categories, input predict file,
 path to image and checkpoint at which model is saved
 
 Ex : 
+
 		python predict.py path/to/image checkpoint.pth
 
 Optional parameters include:
 
 - The number of most likely classes
 	Ex : 
+
 			python predict.py path/to/image checkpoint.pth --top_k 3
 
 - Using a map of predicted classes to real names
 	Ex : 
+
 			python predict.py path/to/image checkpoint.pth cat_to_name.json
 
 - Usage of GPU for prediction
 	Ex : 
+	
 			python predict.py path/to/image checkpoint.pth --gpu
 
 
