@@ -70,8 +70,7 @@ Optional parameters include:
 - Hyperparameters
 	Ex : 
 
-			python train.py data_dir --learning_rate 0.01 --hidden_units 512 256 
-	 -- epochs 20 (all in one line)
+			python train.py data_dir --learning_rate 0.01 --hidden_units 512 256 -- epochs 20 
 
 - Usage of GPU for training
 	Ex : 
@@ -100,7 +99,7 @@ Optional parameters include:
 
 - Usage of GPU for prediction
 	Ex : 
-	
+
 			python predict.py path/to/image checkpoint.pth --gpu
 
 
