@@ -49,6 +49,8 @@ training loss, validation loss, validation accuracy as the model is trained
 predict.py - uses the saved model to predict the top n categories along with 
 				probabilities
 
+cat_to_name.json - json file that gives real flower name in each class
+
 
 To train a new network on a dataset, input train file and path to the data
 Example : 
@@ -70,7 +72,7 @@ Optional parameters include:
 - Hyperparameters
 	Ex : 
 
-			python train.py data_dir --learning_rate 0.01 --hidden_units 512 256 -- epochs 20 
+			python train.py data_dir --learning_rate 0.01 --hidden_units 512 256 --epochs 20 
 
 - Usage of GPU for training
 	Ex : 
